@@ -38,10 +38,14 @@ $ thin start -p 5000 --ssl --ssl-key-file ./ssl/server.key --ssl-cert-file ./ssl
 This tells thin to bind to port 5000, and finds the relevant ssl-key and ssl-cert files.
 
 ## Running via Docker 
-
-With Docker installed, we can use docker-compose
+First build the container sinatra-app, then we can use docker-compose.
+Do this via:
+``` 
+    $ docker build . -t sinatra-app
 ```
-    docker-compose up
+
+```
+    $ docker-compose up
 ```
 
 
